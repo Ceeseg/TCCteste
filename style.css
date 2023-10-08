@@ -1,0 +1,91 @@
+body{
+	background-color:hsla(240,100%,16%,1);
+	background-image:
+	radial-gradient(at 34% 100%, hsla(269,72%,23%,1) 0px, transparent 50%),
+	radial-gradient(at 4% 80%, hsla(244,75%,50%,1) 0px, transparent 50%),
+	radial-gradient(at 100% 0%, hsla(209,96%,67%,1) 0px, transparent 50%),
+	radial-gradient(at 95% 47%, hsla(269,72%,23%,1) 0px, transparent 50%),
+	radial-gradient(at 96% 39%, hsla(263,67%,35%,1) 0px, transparent 50%),
+	radial-gradient(at 85% 90%, hsla(240,100%,16%,1) 0px, transparent 50%),
+	radial-gradient(at 40% 36%, hsla(263,67%,35%,1) 0px, transparent 50%);
+	box-sizing: border-box;
+	font-family: 'Dosis', sans-serif;
+}
+
+/* cores 
+#000055
+#3A1066
+#4D1D96
+#2D1FE0
+#5AACFC*/
+
+nav{
+
+}
+
+.container-home{
+
+}
+
+.absolute{
+	position: absolute;
+	top: 50px !important;
+	inset: 0;
+	justify-content: center;
+	display: inline-flex;
+	flex-direction: row;
+}
+
+.titulo{
+	margin-top: 0 auto;
+	top: 150px;
+	text-align: center;
+	font-size: 90px;
+	font-family: 'Dosis', sans-serif;
+	position: relative;
+}
+
+.subt{
+	margin-top: 0 auto;
+	top: 100px;
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Dosis', sans-serif;
+	position: relative;
+}
+
+.container-fluid{
+	background-color: #FFFFFF;
+}
+
+.row{
+
+}
+
+.col-md-4{
+
+}
+
+.card{
+
+}
+
+h2{
+
+}
+
+.text-card{
+
+}
+
+.btn-loc{
+
+}
+
+.btn-card{
+
+}
+
+footer{
+	background-color: #F5F5F5;
+}
