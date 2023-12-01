@@ -6,76 +6,136 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link REL="SHORTCUT ICON" href="#">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	<!--<script type="text/javascript" href="javs.js"></script>-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-	<nav class="">
-		<ul>
-		  <li><a class="active" href="#home">Ceeseg</a></li>
-		  <li><a href="#news">Riscos</a></li>
-		  <li><a href="#contact">Sites falsos</a></li>
-		  <li><a href="#about">Senhas seguras</a></li>
-		  <li><a href="#about">Quem somos</a></li>
-		</ul>
-	</nav>
 
-	<div class="container-home">
+	<nav class="navbar bg-body-tertiary fixed-top">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="#">Ceeseg</a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+	      <div class="offcanvas-header">
+	        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Ceeseg</h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+	      </div>
+	      <div class="offcanvas-body">
+	        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+	          <li class="nav-item">
+	            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+	          </li>
+	          <li class="nav-item">
+	            <a class="nav-link" aria-current="page" href="riscos.html">Riscos</a>
+	          </li>
+			  <li class="nav-item">
+	            <a class="nav-link" aria-current="page" href="identificar.html">Sites falsos</a>
+	          </li>
+			  <li class="nav-item">
+	            <a class="nav-link" aria-current="page" href="senhas.html">Senha segura</a>
+	          </li>
+			  <li class="nav-item">
+	            <a class="nav-link" aria-current="page" href="quemsomos.html">Quem somos</a>
+	          </li>
+	        </ul>
+	      </div>
+	    </div>
+	  </div>
+	</nav>
+	<main></main>
+	
+	<div class="container">
 		<div class="absolute"><!-- Responsivo, n mexer -->
 			<div><h1 class="titulo">Ceeseg</h1>
-				<h3 class="subt">Comércio eletronico em segurança da informação</h3></div>
+				<br>
+				<h3 class="subt">Comércio eletrônico em segurança da informação</h3></div>
 		</div>
 	</div>
 
-	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<div class="container-sm">
+		<div class="row justify-content-center">
+			<video controls>
+				<source src="inicial.mp4" type="video/mp4">
+			</video> 
+		</div>
+	</div>
+	
+
+	<br><br>
 
 	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-4">
-				<div class="card">
-					<h2>
-						Riscos
-					</h2>
-					<p class="text-card">
-						This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
-					</p>
-					<p class="btn-loc">
-						<a class="btn-card" href="#">Saiba mais</a>
-					</p>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="card">
-					<h2>
-						Sites falsos
-					</h2>
-					<p class="text-card">
-						This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
-					</p>
-					<p class="btn-loc">
-						<a class="btn-card" href="#">Saiba mais</a>
-					</p>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="card">
-					<h2>
-						Senhas seguras
-					</h2>
-					<p class="text-card">
-						This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
-					</p>
-					<p class="btn-loc">
-						<a class="btn-card" href="#">Saiba mais</a>
-					</p>
-				</div>
-			</div>
+		<div class="row row-cols-1 row-cols-md-3 g-4">
+		  <div class="col">
+		    <div class="card h-100">
+		      <div class="card-body">
+		        <h3 class="card-title text-center">Riscos</h3>
+		        <br>
+		        <p class="card-text">Os riscos apresentados nos sites falsos de compras online tem como principal objetivo o roubo de dados...</p>
+		        <br>
+		         <div class="d-grid gap-2 col-6 mx-auto">
+		        	<a class="btn btn-primary" href="riscos.html" role="button">Saiba mais</a>
+		    	</div>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="col">
+		    <div class="card h-100">
+		      <div class="card-body">
+		        <h3 class="card-title text-center">Sites falsos</h3>
+		        <br>
+		        <p class="card-text">Para identificar um site falso temos que ficar atentos aos seguintes pontos: link, preços tentadores...</p>
+		        <br>
+		         <div class="d-grid gap-2 col-6 mx-auto">
+		        	<a class="btn btn-primary" href="identificar.html" role="button">Saiba mais</a>
+		    	</div>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="col">
+		    <div class="card h-100">
+		      <div class="card-body">
+		        <h3 class="card-title text-center">Senha segura</h3>
+		        <br>
+		        <p class="card-text">Para se manter seguro durante as compras online devemos manter uma métrica de senhas com trocas periódicas...</p>
+		        <br>
+		        <div class="d-grid gap-2 col-6 mx-auto">
+		        	<a class="btn btn-primary" href="senhas.html" role="button">Saiba mais</a>
+		    	</div>
+		      </div>
+		    </div>
+		  </div>
 		</div>
 	</div>
 
-<br>
+	<br><br><br><br><br>
 
-	<footer>Ceeseg 2023 - FATEC São Caetano do Sul</footer>
+	<div class="container-sm">
+		<h4>Para a criação deste portal foi feito uma pesquisa com 217 pessoas com diversas idades onde podemos observar no gráfico abaixo que muitas delas colocam dados sensíveis em sites durante as compras online.</h4>
+		<br><br>
+		<div class="row justify-content-center">
+			<img src="grafico.png" style="max-width: 800px;">
+		</div>
+		<br><br>
+		<h4>Desta forma este portal tem como intuito ajudar as pessoas a aprenderem quais os riscos de um site falso, como identificar um e como criar uma métrica de senha adequada para sua proteção na internet. Lembre-se de que a segurança na internet depende de você. Sempre cuidadoso e consciente ao navegar na web.</h4>
+	</div>	
+
+<br><br><br><br><br><br><br><br>
+
+	<footer class="page-footer">
+		<div class="footer-copyright">
+			<div class="container">
+				© 2023 Copyright Text - Ceeseg - FATEC São Caetano do Sul
+			</div>
+		</div>
+    </footer>
+
+	<!--<footer>Ceeseg 2023 - FATEC São Caetano do Sul</footer>-->
 </body>
 </html>

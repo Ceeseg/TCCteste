@@ -5,120 +5,169 @@
 	<title>Ceeseg</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link REL="SHORTCUT ICON" href="#">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="js/bootstrap.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	<!--<script type="text/javascript" href="javs.js"></script>-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-	<nav class="navbar navbar-dark bg-dark fixed-top">
+
+	<nav class="navbar bg-body-tertiary fixed-top">
 	  <div class="container-fluid">
 	    <a class="navbar-brand" href="#">Ceeseg</a>
-	    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+	    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
 	    </button>
-	    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+	    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
 	      <div class="offcanvas-header">
-	        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Ceeseg</h5>
-	        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+	        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Ceeseg</h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 	      </div>
 	      <div class="offcanvas-body">
 	        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
 	          <li class="nav-item">
-	            <a class="nav-link" href="index.html">Home</a>
+	            <a class="nav-link" aria-current="page" href="index.html">Home</a>
 	          </li>
 	          <li class="nav-item">
-	            <a class="nav-link" href="quemsomos.html">Quem somos</a>
+	            <a class="nav-link" aria-current="page" href="riscos.html">Riscos</a>
 	          </li>
-	          <li class="nav-item">
-	            <a class="nav-link" href="riscos.html">Riscos</a>
+			  <li class="nav-item">
+	            <a class="nav-link" aria-current="page" href="identificar.html">Sites falsos</a>
 	          </li>
-	          <li class="nav-item">
-	            <a class="nav-link" href="identificar.html">Sites falsos</a>
+			  <li class="nav-item">
+	            <a class="nav-link" aria-current="page" href="senhas.html">Senha segura</a>
 	          </li>
-	          <li class="nav-item">
-	            <a class="nav-link" href="senhas.html">Senhas seguras</a>
+			  <li class="nav-item">
+	            <a class="nav-link" aria-current="page" href="quemsomos.html">Quem somos</a>
 	          </li>
 	        </ul>
 	      </div>
 	    </div>
 	  </div>
 	</nav>
+	
+	<div class="container-fluid">
+		<h1 class="titulo">Quem somos</h1>
+	</div>
 
-	<br>
+	<br><br><br><br><br><br><br><br><br>
 
-	<div class="container-fluid mt-5 text-center">
-		<h1>Quem somos</h1>
 
-		<div class="row">
-			<div class="col-md-8">
-				<p>
-					Gabriel
-				</p>
-			</div>
-			<div class="col-md-4">
-				<img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" class="rounded-circle" />
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-md-4">
-				<img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" class="rounded-circle" />
-			</div>
-			<div class="col-md-8">
-				<p>
-					Luis
-				</p>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-md-8">
-				<p>
-					Rodrigo
-				</p>
-			</div>
-			<div class="col-md-4">
-				<img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" class="rounded-circle" />
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-md-4">
-				<img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" class="rounded-circle" />
-			</div>
-			<div class="col-md-8">
-				<p>
-					Sophia
-				</p>
-			</div>
-		</div>
-
-		<div class="row">
-			<form role="form">
-				<div class="form-group">
-					<label for="exampleInputEmail1">
-						Endereço de e-mail
-					</label>
-					<input type="email" class="form-control" id="exampleInputEmail1" />
+	<div class=" container-sm">
+		<div class="row justify-content-center">
+			<div class="card mb-3" style="max-width: 915px;">
+				<div class="row g-0">
+					<div class="col-md-4">
+						<img src="gab.png" class="img-fluid rounded-start">
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<h5 class="card-title">Gabriel Gonzales</h5>
+							<p class="card-text">Olá, sou o Gabriel, mas conhecido como Gab! Sou fascinado pela área de Segurança da Informação, principalmente pela área de gestão. No momento não trabalho na área, porém estou atuando na área de T.I. E gosto do que faço, por mais que não seja na área de segurança, uso muito do meu aprendizado nessa área para me ajudar no dia a dia na empresa e nos meus afazeres em geral. Segurança para mim é um aprendizado essencial para uma íntegra e segura navegação dentro da internet. Em minha opinião, se todos que utilizam a tecnologia pudessem obter um conhecimento básico em segurança, muitos problemas seriam facilmente diminuídos, propagando assim uma utilização íntegra e consciente dos meios tecnológicos.</p>
+						</div>
+					</div>
 				</div>
-
-				<div class="form-group">
-					<label for="exampleInputPassword1">
-						Texto
-					</label>
-					<input type="text" class="form-control" id="exampleInputPassword1" />
-				</div>
- 
-				<button type="submit" class="btn btn-primary">Enviar</button>
-			</form>
+			</div>
 		</div>
 	</div>
 
 <br>
 
-	<footer>2023 - FATEC São Caetano do Sul</footer>
+	<div class=" container-sm">
+		<div class="row justify-content-center">
+			<div class="card mb-3" style="max-width: 915px;">
+				<div class="row g-0">
+					<div class="col-md-4">
+						<img src="soph.png" class="img-fluid rounded-start" alt="...">
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<h5 class="card-title">Sophia Magyar</h5>
+							<p class="card-text">Sou a Sophia, e amo a área da tecnologia! Comecei meus estudos durante o ensino médio, onde fiz curso de ensino médio técnico de Desenvolvimento Web na ETEC Lauro Gomes. Trabalhei como free-lancer de produção de sites e imagem de empresa por um tempo durante o ensino médio e após entrar na faculdade. Depois que entrei na faculdade tive a oportunidade de obter diversos conhecimentos e me apaixonar mais ainda pela tecnologia, principalmente a área de Segurança da Informação, com isso alcancei minha vaga de estágio onde pude por em prática tudo o que aprendi na faculdade e espero no futuro poder conseguir mais aprendizado para por em prática durante minha carreira profissional.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<br>
+
+	<div class=" container-sm">
+		<div class="row justify-content-center">
+			<div class="card mb-3" style="max-width: 915px;">
+				<div class="row g-0">
+					<div class="col-md-4">
+						<img src="rodrigo.png" class="img-fluid rounded-start" alt="...">
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<h5 class="card-title">Rodrigo Gomes</h5>
+							<p class="card-text">Olá, meu nome é Rodrigo, tenho 23 anos e estou me formando em segurança da informação pela fatec são Caetano do Sul, Desde a infância, minha diversão era desmontar e montar computadores, formatar e instalar programas, o que me proporcionou um vasto aprendizado e uma paixão imensa pela área de TI. Foi através de documentários e filmes de hackers que descobri a segurança da informação, e desde então, essa área me cativa, permitindo-me combinar minha paixão tecnológica com os desafios diários da segurança da informação.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<br>
+
+	<div class=" container-sm">
+		<div class="row justify-content-center">
+			<div class="card mb-3" style="max-width: 915px;">
+				<div class="row g-0">
+					<div class="col-md-4">
+						<img src="luis.png" class="img-fluid rounded-start" alt="...">
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<h5 class="card-title">Luis Borri</h5>
+							<p class="card-text">Sou o Luis e comecei na área como analista de backup, onde fiquei por 2 anos trabalhando, depois resolvi mudar e migrei para área de desenvolvimento SAP, trabalho faz 3 anos na área da tecnologia, passando por duas empresas e posso afirmar a importância que as empresas levam referente a segurança da informação, tendo treinamentos mensais e palestras de conscientização sobre segurança.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<br><br><br>
+
+	<div class="container-sm">
+		<form>
+			<div class="mb-3">
+				<label for="exampleInputEmail1" class="form-label h4">Nome</label>
+				<input type="nome" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+			</div>
+			<div class="mb-3">
+				<label for="exampleInputPassword1" class="form-label h4">E-mail</label>
+				<input type="email" class="form-control" id="exampleInputPassword1">
+			</div>
+			<div class="mb-3">
+  				<label for="exampleFormControlTextarea1" class="form-label h4">Comentário</label>
+  				<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+			</div>
+			<br>
+			<div class="d-grid gap-2 col-6 mx-auto">
+				<a class="btn btn-primary" role="button">Enviar</a>
+			</div>
+		</form>
+	</div>
+
+	<br><br><br><br><br><br><br><br>
+
+	<footer class="page-footer">
+		<div class="footer-copyright">
+			<div class="container">
+				© 2023 Copyright Text - Ceeseg - FATEC São Caetano do Sul
+			</div>
+		</div>
+    </footer>
+
+	<!--<footer>Ceeseg 2023 - FATEC São Caetano do Sul</footer>-->
 </body>
 </html>
